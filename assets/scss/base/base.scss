@@ -1,0 +1,15 @@
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/light.min.css";
+@import "../../node_modules/@fortawesome/fontawesome-pro/css/fontawesome.min.css";
+
+html {
+    scroll-behavior: smooth;    
+}
+
+body {
+    font: var(--ft-m);
+    color: var(--color-ft);
+}
+
+b b {
+    font-weight: 800;
+}

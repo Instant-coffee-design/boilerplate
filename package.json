@@ -9,8 +9,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.1",
+    "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
     "nuxt": "^2.14.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3"
+  }
 }

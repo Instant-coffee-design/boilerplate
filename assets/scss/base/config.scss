@@ -1,0 +1,50 @@
+$breakpoints: (
+    "": 99999px,
+    "m": 1200px,
+    "s": 900px,
+    "xs": 600px
+);
+
+$block-widths: (
+    "m": 650
+);
+
+$spacings: (
+    "none": 0,
+    "3xs": 3,
+    "2xs": 5,
+    "xs": 10,
+    "s": 20,
+    "s-m": 30,
+    "s-l": 40,
+    "m": 50,
+    "l": 60,
+    "xl": 100,
+    "2xl": 150
+);
+
+$gutters: (
+    "xl": 60,
+    "l": 30,
+    "m": 20,
+    "s": 10,
+    "xs": 5,
+    "2xs": 2,
+    "none": 0
+);
+
+$colors: (
+    "ft": #101010,
+
+    "error": #FF2D42,
+    "confirm": #10c773
+);
+
+$fonts: (
+    "ft": (
+        "name": "sans-serif",
+        "sizes": (
+            "m": "16px/1.6"
+        )
+    )
+);
