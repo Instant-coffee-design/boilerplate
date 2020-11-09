@@ -1,4 +1,8 @@
+@import "@instant-coffee/core/assets/scss/reset.scss";
 @import "./base/index.scss";
+@import "@instant-coffee/core/assets/scss/mixins.scss";
+@import "@instant-coffee/core/assets/scss/components.scss";
 @import "./components/index.scss";
+@import "./layout/index.scss";
 @import "./pages/index.scss";
-@import "./base/atomic.scss";
+@import "@instant-coffee/core/assets/scss/atomic.scss";

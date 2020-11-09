@@ -26,8 +26,19 @@ export default {
     buildModules: [],
 
     modules: [
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        'nuxt-i18n'
     ],
+
+    i18n: {
+        locales: [
+            { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
+            { code: 'en', iso: 'en-EN', file: 'en.js' }
+        ],
+        langDir: '/translations/',
+        defaultLocale: 'fr',
+        lazy: true
+    },
 
     build: {
         extend (config) {
