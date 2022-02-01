@@ -1,4 +1,5 @@
 require('dotenv').config()
+import redirectSSL from 'redirect-ssl'
 
 export default {
     head: {

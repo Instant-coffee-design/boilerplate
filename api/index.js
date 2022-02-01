@@ -37,8 +37,6 @@ const upload = multer({ storage: storage })
 
 app.locals.s3 = s3
 app.locals.increment = AutoIncrementFactory(mongoose.connection)
-app.locals.stripe = stripe
-app.locals.sendinBlue = SibApiV3Sdk
 
 mongoose.connection.on('error', console.error.bind(console, 'connection error:'))
 

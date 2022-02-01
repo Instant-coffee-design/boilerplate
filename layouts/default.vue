@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { TooltipManager } from '@instant-coffee/core'
+import { TooltipManager } from 'instant-coffee-core'
 
 export default {
     name: 'LayoutDefault',

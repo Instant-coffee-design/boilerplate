@@ -48,9 +48,34 @@ $colors: (
 
 $fonts: (
     "ft": (
-        "name": "sans-serif",
+        "name": "Rubik, sans-serif",
         "sizes": (
-            "m": "16px/1.6"
+            "2xs": "8px/1.5",
+            "xs": "12px/1.5",
+            "s": "14px/1.5",
+            "m": "16px/1.5",
+            "l": "18px/1.4",
+            "xl": "20px/1.4",
+            "2xl": "26px/1.4",
+            "3xl": "34px/1.25",
+            "4xl": "40px/0.75",
+            "5xl": "70px/0.75",
+        ),
+        "weights": (
+            "regular": 400,
+            "medium": 500,
+            "bold": 700
+        )
+    ),
+    "ft-icon": (
+        "name": "'Font Awesome 6 Pro'",
+        "sizes": (
+            "xs": "12px/1",
+            "s": "14px/1",
+            "m": "16px/1"
+        ),
+        "weights": (
+            "regular": 300
         )
     )
 );
