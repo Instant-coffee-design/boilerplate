@@ -2,20 +2,40 @@ export default {
     getCollection (items) {
         return Object.keys(items).map(key => items[key])
     },
-    getQuery (path, params) {
-        return params.query ? `${path}?${Object.keys(params.query).map(key => `${key}=${params.query[key]}`).join('&')}` : path
+    getQuery (path, query) {
+        return query ? `${path}?${Object.keys(query).map(key => `${key}=${query[key]}`).join('&')}` : path
     },
     updateOne (state, value) {
-        items = JSON.parse(JSON.stringify(state))
-        items[value.id] = value
+        let items = JSON.parse(JSON.stringify(state.items))
+        items[value._id] = value
+
+        return items
+    },
+    deleteOne (state, id) {
+        let items = JSON.parse(JSON.stringify(state.items))
+        delete items[id]
 
         return items
     },
     refresh (values) {
         let items = values.reduce((acc, value) => {
-            return { ...acc, [value.id]: value }
+            return { ...acc, [value._id]: value }
         }, {})
 
         return items
+    },
+    handleErrors (e, commit, text) {
+        e = Array.isArray(e) ? e : [ e ]
+
+        e.forEach(e => {
+            commit('flashes/add', {
+                title: text,
+                text: e.message
+            }, { root: true })
+
+            console.error(e)
+        })
+
+        return null
     }
 }
